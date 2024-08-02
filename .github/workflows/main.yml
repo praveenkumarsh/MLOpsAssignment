@@ -13,7 +13,7 @@ env:
   ECR_REPOSITORY: mlopsassignment1
   ECS_SERVICE: MLOpsAssignmentService
   ECS_CLUSTER: DevCluster2
-  ECS_TASK_DEFINITION: MLOpsAssignmentTaskDefinition
+  ECS_TASK_DEFINITION: MLOpsAssignmentTaskDefinition-revision1.json
   CONTAINER_NAME: MLOpsAssignmentContainer
 
 jobs:
