@@ -1,8 +1,8 @@
 flake8
 pytest
 Flask
-pandas==2.0.3
-joblib==1.3.2
-scikit-learn==1.3.2
-mlflow==2.6.0
-psutil==5.9.4
+pandas
+joblib
+scikit-learn
+mlflow
+psutil
