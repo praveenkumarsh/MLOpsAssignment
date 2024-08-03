@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Assignments/MLOps/MLOpsAssignment/mlruns/0/2b16a33efedf4330953db0498c760db5/artifacts
+end_time: 1722676435631
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2b16a33efedf4330953db0498c760db5
+run_name: welcoming-snail-818
+run_uuid: 2b16a33efedf4330953db0498c760db5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722676426143
+status: 3
+tags: []
+user_id: dcepk

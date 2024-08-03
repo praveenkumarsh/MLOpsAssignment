@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Assignments/MLOps/MLOpsAssignment/mlruns/0/ece322bb580f4237b39d5566e1af1397/artifacts
+end_time: 1722677176354
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ece322bb580f4237b39d5566e1af1397
+run_name: placid-gnu-749
+run_uuid: ece322bb580f4237b39d5566e1af1397
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722677176149
+status: 4
+tags: []
+user_id: dcepk

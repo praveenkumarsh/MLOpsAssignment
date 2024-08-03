@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Assignments/MLOps/MLOpsAssignment/mlruns/0/5a985933730c438ca7cc4e4da27cbf4a/artifacts
+end_time: 1722677764379
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5a985933730c438ca7cc4e4da27cbf4a
+run_name: popular-finch-254
+run_uuid: 5a985933730c438ca7cc4e4da27cbf4a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722677758827
+status: 3
+tags: []
+user_id: dcepk

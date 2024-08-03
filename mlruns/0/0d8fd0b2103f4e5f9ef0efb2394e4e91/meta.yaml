@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Assignments/MLOps/MLOpsAssignment/mlruns/0/0d8fd0b2103f4e5f9ef0efb2394e4e91/artifacts
+end_time: 1722675947253
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0d8fd0b2103f4e5f9ef0efb2394e4e91
+run_name: amusing-sloth-627
+run_uuid: 0d8fd0b2103f4e5f9ef0efb2394e4e91
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722675938476
+status: 3
+tags: []
+user_id: dcepk
