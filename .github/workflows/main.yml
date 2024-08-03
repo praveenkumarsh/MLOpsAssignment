@@ -10,11 +10,11 @@ on:
 
 env:
   AWS_REGION: us-east-1
-  ECR_REPOSITORY: mlopsassignment1
+  ECR_REPOSITORY: mlopsmodelassignment1 #mlopsassignment1
   ECS_SERVICE: MLOpsAssignmentService
-  ECS_CLUSTER: DevCluster2
-  ECS_TASK_DEFINITION: MLOpsAssignmentTaskDefinition-revision1.json
-  CONTAINER_NAME: MLOpsAssignmentContainer
+  ECS_CLUSTER: DevCluster3
+  ECS_TASK_DEFINITION: .aws/MLOpsAssTaskDefine1.json
+  CONTAINER_NAME: app
 
 jobs:
   lint:
@@ -110,11 +110,11 @@ jobs:
           container-name: ${{ env.CONTAINER_NAME }}
           image: ${{ steps.build-image.outputs.image }}
 
-      - name: Deploy Amazon ECS task definition
-        uses: aws-actions/amazon-ecs-deploy-task-definition@df9643053eda01f169e64a0e60233aacca83799a
-        with:
-          task-definition: ${{ steps.task-def.outputs.task-definition }}
-          service: ${{ env.ECS_SERVICE }}
-          cluster: ${{ env.ECS_CLUSTER }}
-          wait-for-service-stability: true
+      # - name: Deploy Amazon ECS task definition
+      #   uses: aws-actions/amazon-ecs-deploy-task-definition@df9643053eda01f169e64a0e60233aacca83799a
+      #   with:
+      #     task-definition: ${{ steps.task-def.outputs.task-definition }}
+      #     service: ${{ env.ECS_SERVICE }}
+      #     cluster: ${{ env.ECS_CLUSTER }}
+      #     wait-for-service-stability: true
 
