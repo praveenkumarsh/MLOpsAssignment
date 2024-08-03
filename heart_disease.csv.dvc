@@ -1,5 +1,5 @@
 outs:
-- md5: ab21f2524241ed14b321bcaf40c8b86e
-  size: 35921
+- md5: 0c924f8fbb485adae412e9e538042595
+  size: 390
   hash: md5
   path: heart_disease.csv
