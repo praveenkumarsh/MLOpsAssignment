@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Assignments/MLOps/MLOpsAssignment/mlruns/0/1d1965b0a9d94acead45f36c2f0dde96/artifacts
+end_time: 1722680814683
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1d1965b0a9d94acead45f36c2f0dde96
+run_name: gregarious-koi-595
+run_uuid: 1d1965b0a9d94acead45f36c2f0dde96
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722680784088
+status: 3
+tags: []
+user_id: dcepk
