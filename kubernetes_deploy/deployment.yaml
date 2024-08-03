@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ml-ops-assignment-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ml-ops-app
+  template:
+    metadata:
+      labels:
+        app: ml-ops-app
+    spec:
+      containers:
+      - name: mlops
+        image: vegabond/mlops_model:latest
+        ports:
+        - containerPort: 80
