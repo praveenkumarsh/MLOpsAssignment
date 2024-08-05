@@ -77,16 +77,14 @@ jobs:
         uses: actions/checkout@v3
       - name: ACR build
         id: build-push-acr
-        uses: azure/acr-build@v1
+        uses: azure/docker-login@v1
         with:
-          service_principal: ${{ secrets.service_principal }}
-          service_principal_password: ${{ secrets.service_principal_password }}
-          tenant: ${{ secrets.tenant }}
-          registry: ${{ secrets.registry }}
-          repository: ${{ secrets.repository }}
-          image:  mlops_model
-          branch: main
-          tag: ${{ github.sha }}
+          login-server: mlopspks.azurecr.io
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+      - run: |
+          docker build . -t '${{ secrets.registry }}.azurecr.io/${{ secrets.repository }}/mlops_model:${{ github.sha }}'
+          docker push '${{ secrets.registry }}.azurecr.io/${{ secrets.repository }}/mlops_model:${{ github.sha }}'
       - name: Azure login
         id: login
         uses: azure/login@v1.4.3
