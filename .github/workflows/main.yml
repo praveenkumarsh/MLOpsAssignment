@@ -105,6 +105,6 @@ jobs:
         with:
           namespace: 'default'
           manifests: |
-             .azure\azureaks.yaml
+             azureaks.yaml
           images: '${{ secrets.registry }}.azurecr.io/${{ secrets.repository }}/mlops_model:${{ github.sha }}'
           pull-images: false
