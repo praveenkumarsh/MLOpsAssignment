@@ -84,9 +84,8 @@ jobs:
           tenant: ${{ secrets.tenant }}
           registry: ${{ secrets.registry }}
           repository: ${{ secrets.repository }}
-          image:  azure-vote-front
-          folder: azure-vote
-          branch: master
+          image:  mlops_model
+          branch: main
           tag: ${{ github.sha }}
       - name: Azure login
         id: login
@@ -108,6 +107,6 @@ jobs:
         with:
           namespace: 'default'
           manifests: |
-             azure-vote-all-in-one-redis.yaml
-          images: '${{ secrets.registry }}.azurecr.io/${{ secrets.repository }}/azure-vote-front:${{ github.sha }}'
+             azureaks.yaml
+          images: '${{ secrets.registry }}.azurecr.io/${{ secrets.repository }}/mlops_model:${{ github.sha }}'
           pull-images: false
