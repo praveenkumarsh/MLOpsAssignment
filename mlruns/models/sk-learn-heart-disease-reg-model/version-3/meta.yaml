@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1722974267125
+current_stage: None
+description: null
+last_updated_timestamp: 1722974267125
+name: sk-learn-heart-disease-reg-model
+run_id: 42492607318248b29a5ad3006aaa5f7a
+run_link: null
+source: file:///D:/Assignments/MLOps/MLOpsAssignment/mlruns/0/42492607318248b29a5ad3006aaa5f7a/artifacts/sklearn-model
+status: READY
+status_message: null
+storage_location: file:///D:/Assignments/MLOps/MLOpsAssignment/mlruns/0/42492607318248b29a5ad3006aaa5f7a/artifacts/sklearn-model
+user_id: null
+version: 3

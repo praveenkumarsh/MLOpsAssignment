@@ -8,6 +8,7 @@ from sklearn.metrics import (classification_report, accuracy_score,
                              precision_score, recall_score, f1_score)
 import mlflow
 import mlflow.sklearn
+from mlflow.models import infer_signature
 import joblib
 import psutil
 import time
@@ -65,7 +66,7 @@ with mlflow.start_run():
 
     # Train the model with GridSearchCV
     start_time = time.time()
-    grid_search.fit(X_train, y_train)
+    model = grid_search.fit(X_train, y_train)
     training_time = time.time() - start_time
 
     # Get the best model from GridSearchCV
@@ -106,3 +107,12 @@ with mlflow.start_run():
 
     # Log the best parameters
     mlflow.log_params(grid_search.best_params_)
+
+    signature = infer_signature(X_test, y_pred)
+    # Log the sklearn model and register as version 1
+    mlflow.sklearn.log_model(
+        sk_model=model,
+        artifact_path="sklearn-model",
+        signature=signature,
+        registered_model_name="sk-learn-heart-disease-reg-model",
+    )

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Assignments/MLOps/MLOpsAssignment/mlruns/0/25b3fbcf6f4d4198a74e92b3072d7599/artifacts
+end_time: 1722974319882
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 25b3fbcf6f4d4198a74e92b3072d7599
+run_name: rebellious-ram-114
+run_uuid: 25b3fbcf6f4d4198a74e92b3072d7599
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722974274761
+status: 3
+tags: []
+user_id: dcepk
