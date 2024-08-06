@@ -1,0 +1,9 @@
+mlopsassignment:
+  name: mlopsassignment1
+  group: assignments
+  container:
+    image: vegabond/mlops_model
+    port: 80
+    
+image:
+  repository: vegabond/mlops_model
