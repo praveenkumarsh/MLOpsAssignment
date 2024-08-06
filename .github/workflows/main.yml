@@ -8,14 +8,6 @@ on:
     branches:
       - main
 
-# env:
-#   AZURE_CONTAINER_REGISTRY: us-east-1
-#   REGISTRY_URL: mlopsassignment1
-#   PROJECT_NAME: MLOpsAssignmentService
-  # ECS_CLUSTER: DevCluster3
-  # ECS_TASK_DEFINITION: .aws/MLOpsAssTaskDefine1.json
-  # CONTAINER_NAME: app
-
 jobs:
   lint:
     name: Lint Code
@@ -52,7 +44,6 @@ jobs:
   deploy_docker:
     name: Deploy Docker
     runs-on: ubuntu-latest
-    #if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python

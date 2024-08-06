@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Assignments/MLOps/MLOpsAssignment/mlruns/0/0e7777b0865a4ebaa0f0a1582982db31/artifacts
+end_time: 1722974003582
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0e7777b0865a4ebaa0f0a1582982db31
+run_name: bald-grouse-20
+run_uuid: 0e7777b0865a4ebaa0f0a1582982db31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722973960889
+status: 3
+tags: []
+user_id: dcepk
